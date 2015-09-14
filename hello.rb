@@ -2,6 +2,7 @@ require 'sinatra'
 
 
 get '/' do
+  @visitor = params[:name]
   @name = "Oscar"
   erb :index
 end
